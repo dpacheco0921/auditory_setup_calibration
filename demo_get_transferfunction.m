@@ -40,8 +40,7 @@ samplingrate = 10000;
     startCut, timeTaken, stimStart, filepath);
 
 % 5) Calculate transfer function
-[mean_ifft_tf_stimTomic, ...
-    mean_ifft_tf_micToStim, tf] = ...
+[mean_ifft_tf_stimTomic, mean_ifft_tf_micToStim, tf] = ...
     get_transfer_funct(stim_cut, resp_cut, samplingrate, numTrials);
 
 plot_pwelch_per_trial(stim_cut, resp_cut, samplingrate, numTrials, tf)

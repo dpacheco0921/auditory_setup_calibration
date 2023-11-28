@@ -1,18 +1,17 @@
-function [mean_ifft_tf_stimTomic, ...
-    mean_ifft_tf_micToStim, tf] = ...
+function [mean_ifft_tf_stimTomic, mean_ifft_tf_micToStim, tf] = ...
     get_transfer_funct(stim_, mic_, samplingrate, numTrials)
-% load_aud_volt: generates transfer function from auditory stimuli 
+% get_transfer_funct: generates transfer function from auditory stimuli 
 %   (input vector in matlab) to microphone recording (volt) and vice versa.
 %
 % Usage:
-%   [mean_ifft_tf_stimTomic, ...
-%       mean_ifft_tf_micToStim] = ...
+%   [mean_ifft_tf_stimTomic, mean_ifft_tf_micToStim] = ...
 %       get_transfer_funct(stim_, mic_, samplingrate, numTrials)
 %
 % Args:
 %   stim_: auditory input 
 %   mic_: microphone recording
-%   samplingrate: sampling rate of recordings (assumes they are the samefor both stim_ and mic_)
+%   samplingrate: sampling rate of recordings
+%       (assumes they are the samefor both stim_ and mic_)
 %   numTrials: max number of trials to load
 
 % default settings

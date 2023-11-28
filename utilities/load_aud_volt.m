@@ -53,8 +53,8 @@ for trial_i = 1:numTrials
    stim_cut(trial_i,:) = stim(trial_i, cutIdx);
 
    % highpass filter to revome low frequency noise in microphone recording
-   % butterworth, 1st order, cutoff of 10 Hz(divide by spr/2 to used
-   % frequencies in Hz and not normalized frequencies (see help)
+   %    butterworth, 1st order, cutoff of 80 Hz (divide by spr/2 to used
+   %    frequencies in Hz and not normalized frequencies (see help)
    [b, a] = butter(8, 80/(samplingrate/2), 'high');
    hpf = filtfilt(b, a, resp_cut(trial_i,:));
    
