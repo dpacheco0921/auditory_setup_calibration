@@ -14,17 +14,12 @@ Notes on the calibration of auditory stimuli
 Sound is produced using matlab --> DAQ (analog output) --> amplifier --> headphone --> tubing
 
 * **Measurement of stimuli**
-    * Calibrated pressure gradient microphone (NR23159, Knowles Electronics Inc., Itasca, IL, USA) for calibration of intensity.
-
+   - Calibrated pressure gradient microphone (NR23159, Knowles Electronics Inc., Itasca, IL, USA) for calibration of intensity.
 ![NR23159](inst/images/NR23159_microphone.JPG)
-
-    * Pressure microphone (4190-L-001, Bruel & Kjaer) to calibrate the power spectrum.
-    * Microphone Preamplifier (MicPre 2.1, Bio-electronics Shop 2013).
-
+   - Pressure microphone (4190-L-001, Bruel & Kjaer) to calibrate the power spectrum.
+   - Microphone Preamplifier (MicPre 2.1, Bio-electronics Shop 2013).
 ![MicPreamp](inst/images/Mircrophone_preamplifier.JPG)
-
-    * Soundproof box for calibration.
-
+   - Soundproof box for calibration.
 ![box1](inst/images/soundproofbox_1.JPG)
 ![box2](inst/images/soundproofbox_2.JPG)
 
